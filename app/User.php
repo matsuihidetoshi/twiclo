@@ -36,4 +36,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * 特定ユーザーの全ポスト取得
+     */
+    public function posts()
+    {
+        return $this->hasMany(Post::class);
+    }
 }

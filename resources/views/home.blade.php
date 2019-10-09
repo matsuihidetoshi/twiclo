@@ -15,6 +15,7 @@
                     @endif
 
                     You are logged in!
+                    <p><a href="{{ route('posts') }}">Posts</a></p>
                 </div>
             </div>
         </div>
